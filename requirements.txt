@@ -1,0 +1,19 @@
+datasets==2.14.6
+fastcore==1.5.29
+openai==1.1.1
+peft==0.6.0
+pydantic==2.4.2
+tiktoken==0.5.1
+torch==2.1.0
+torchaudio==2.1.0
+torchvision==0.16.0
+transformers==4.35.0
+Wikipedia-API==0.6.0
+
+# jupyter stuff
+jupyterlab==4.0.8
+jupyterlab-execute-time==3.1.0
+jupyter-nbextensions-configurator==0.6.3
+jupyterlab-search-replace==1.1.0
+matplotlib==3.8.1
+
