@@ -3,20 +3,25 @@ datasets==2.14.6
 fastcore==1.5.29
 openai==1.1.1
 peft==0.6.0
+packaging==23.2
 pydantic==2.4.2
+sentence-transformers==2.2.2
 tiktoken==0.5.1
-torch==2.1.0
-torchaudio==2.1.0
+torch>=2.1.0
 torchvision==0.16.0
-transformers==4.35.0
+transformers
 Wikipedia-API==0.6.0
 
 # to support AutoModelForCausalLM
-accelerate==0.24.1                          # for`load_in_8bit=True`
+accelerate @ git+https://github.com/huggingface/accelerate@80da9cfb09bb3cc9f1b385cb55d6b90d025a5fd9        # for`load_in_8bit=True`
+auto-gptq>=0.5.0                            # for `TheBloke/Llama-2-7b-Chat-GPTQ` models
 bitsandbytes==0.41.1
-scipy                                       # via bitsandbytes
-auto-gptq==0.5.0                            # for `TheBloke/Llama-2-7b-Chat-GPTQ` models
+scipy==1.11.3                               # via bitsandbytes
+auto-gptq>=0.4.2                            # for `TheBloke/Llama-2-7b-Chat-GPTQ` models; axolotl 0.3.0 depends on auto-gptq==0.4.2
 optimum==1.14.0
+
+# axolotl for fine tuning -- many dep conflicts
+# see new cells in notebook for inline install of required packages for this last part of notebook
 
 # jupyter stuff
 ipywidgets==8.1.1
