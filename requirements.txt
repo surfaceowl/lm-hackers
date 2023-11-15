@@ -1,13 +1,14 @@
-# core packages for notebook
+# core packages for jeremy's ML notebook
 datasets==2.14.6
 fastcore==1.5.29
+llama-cpp-python==0.2.18
 openai==1.1.1
 peft==0.6.0
 packaging==23.2
 pydantic==2.4.2
 sentence-transformers==2.2.2
 tiktoken==0.5.1
-torch>=2.1.0
+torch>=2.0.1
 torchvision==0.16.0
 transformers
 Wikipedia-API==0.6.0
@@ -27,7 +28,7 @@ optimum==1.14.0
 ipywidgets==8.1.1
 jupyterlab==4.0.8
 jupyterlab-execute-time==3.1.0
-jupyter-nbextensions-configurator==0.6.3
 jupyterlab-search-replace==1.1.0
+jupyter-server==2.10.1
 matplotlib==3.8.1
 
